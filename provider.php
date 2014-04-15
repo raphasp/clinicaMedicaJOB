@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	include("class/xmlstruct.php");
+	
 ?>
 <html>
 <head>
@@ -57,12 +57,6 @@
 	          </ul>
 	        </li>
 	      </ul>
-	      <form class="navbar-form navbar-left" role="search">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Buscar">
-	        </div>
-	        <button type="submit" class="btn"><i class="glyphicon glyphicon-search"></i></button>
-	      </form>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="dropdown">
 	          <a href="#" id="nameuser"><i id="ic_user" class="glyphicon glyphicon-user"></i>Rafael Samano Pichardo</a>
@@ -91,17 +85,140 @@
       </div>
     </div>
 	<div class="container" >
-		<div id="sb-search" class="sb-search">
-		    <form role="form" class="col-lg-12" id="search"> 
-		        <input class="sb-search-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
-		        <input class="sb-search-submit" type="submit" value="">
-		        <span class="sb-icon-search"></span>
-		    </form>
-		</div>
-		<div class="col-md-12">
-			<fieldset>
-				<legend>RESULTADOS</legend>
+	 	<form class="form-inline" role="search">
+	        <div class="form-group input-back-job has-feedback">
+	          <input type="text" class="form-control input-lg input-job" id='codebar' name='codebar' type='text' required='true' data-toggle="tooltip" data-placement="top" title="Código de barras" placeholder="Buscar">
+	          <i id="cancelSearch" class='glyphicon glyphicon-remove form-control-feedback'></i>
+	        </div>
+	        <button type="submit" class="btn btn-search input-lg"><i class="glyphicon glyphicon-search"></i></button>
+	    </form>
+		<div class="row">
+			<fieldset class='col-md-12'>
+				
+				<div class="main">
+				<div id="cbp-vm" class="cbp-vm-switcher cbp-vm-view-grid">
+					<div class="cbp-vm-options">
+						<div class="input-back-job-filter has-feedback">
+							<input type="text" class="form-control input-job" id='filter' name='filter' type='text' required='true' data-toggle="tooltip" data-placement="top" title="Código de barras" placeholder="Buscar">
+						</div>
+						<a href="#" class="cbp-vm-selected glyphicon glyphicon-th" data-view="cbp-vm-view-grid">Grid View</a>
+						<a href="#" class="glyphicon glyphicon-th-list" data-view="cbp-vm-view-list">List View</a>
+					</div>
+					<ul>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/1.png"></a>
+							<h3 class="cbp-vm-title">Silver beet</h3>
+							<div class="cbp-vm-price">$19.90</div>
+							<div class="cbp-vm-details">
+								Silver beet shallot wakame tomatillo salsify mung bean beetroot groundnut.
+							</div>
+							<a class="cbp-vm-add" href="#"><i class='glyphicon glyphicon-edit'></i> Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/2.png"></a>
+							<h3 class="cbp-vm-title">Wattle seed</h3>
+							<div class="cbp-vm-price">$22.90</div>
+							<div class="cbp-vm-details">
+								Wattle seed bunya nuts spring onion okra garlic bitterleaf zucchini.
+							</div>
+							<a class="cbp-vm-add" href="#"><i class='glyphicon glyphicon-edit'></i> Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/3.png"></a>
+							<h3 class="cbp-vm-title">Kohlrabi bok</h3>
+							<div class="cbp-vm-price">$5.90</div>
+							<div class="cbp-vm-details">
+								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
+							</div>
+							<a class="cbp-vm-add" href="#"><i class='glyphicon glyphicon-edit'></i> Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/4.png"></a>
+							<h3 class="cbp-vm-title">Melon sierra</h3>
+							<div class="cbp-vm-price">$12.90</div>
+							<div class="cbp-vm-details">
+								Melon sierra leone bologi carrot peanut salsify celery onion jícama summer purslane.
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/5.png"></a>
+							<h3 class="cbp-vm-title">Celery carrot</h3>
+							<div class="cbp-vm-price">$15.00</div>
+							<div class="cbp-vm-details">
+								Celery carrot napa cabbage wakame zucchini celery chard beetroot jícama sierra leone.
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/6.png"></a>
+							<h3 class="cbp-vm-title">Catsear</h3>
+							<div class="cbp-vm-price">$20.00</div>
+							<div class="cbp-vm-details">
+								Catsear cabbage tomato parsnip cucumber pea brussels sprout spring onion shallot swiss .
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/7.png"></a>
+							<h3 class="cbp-vm-title">Mung bean</h3>
+							<div class="cbp-vm-price">$88.00</div>
+							<div class="cbp-vm-details">
+								Mung bean taro chicory spinach komatsuna fennel.
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/8.png"></a>
+							<h3 class="cbp-vm-title">Epazote</h3>
+							<div class="cbp-vm-price">$34.90</div>
+							<div class="cbp-vm-details">
+								Epazote soko chickpea radicchio rutabaga desert raisin wattle seed coriander water.
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/9.png"></a>
+							<h3 class="cbp-vm-title">Tatsoi caulie</h3>
+							<div class="cbp-vm-price">$21.50</div>
+							<div class="cbp-vm-details">
+								Tatsoi caulie broccoli rabe bush tomato fava bean beetroot epazote salad grape.
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/10.png"></a>
+							<h3 class="cbp-vm-title">Endive okra</h3>
+							<div class="cbp-vm-price">$18.50</div>
+							<div class="cbp-vm-details">
+								Endive okra chard desert raisin prairie turnip cucumber maize avocado.
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/1.png"></a>
+							<h3 class="cbp-vm-title">Bush tomato</h3>
+							<div class="cbp-vm-price">$9.00</div>
+							<div class="cbp-vm-details">
+								Bush tomato peanut shallot turnip prairie turnip gram desert raisin.
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+						<li>
+							<a class="cbp-vm-image" href="#"><img src="img/2.png"></a>
+							<h3 class="cbp-vm-title">Yarrow leek</h3>
+							<div class="cbp-vm-price">$22.50</div>
+							<div class="cbp-vm-details">
+								Yarrow leek cabbage amaranth onion salsify caulie kale desert raisin prairie turnip garlic.
+							</div>
+							<a class="cbp-vm-icon cbp-vm-add" href="#">Add to cart</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /main -->
 			</fieldset>
 		</div>
 	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpViewModeSwitch.js"></script>
 </body>

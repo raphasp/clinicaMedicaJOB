@@ -1054,3 +1054,77 @@ legend{
   overflow-y: auto;
   max-height: 50vh;
 }
+
+/*progressbar*/
+.progressbar{
+  margin: -30px auto 20px auto;
+  height: 10px;
+  display: block;
+  position: relative;
+  border-radius: 0px;
+  overflow:hidden;
+  background: #fcfcfc;
+  border:solid 1px #fcfcfc;
+  trasition:all .3s ease-out;
+  -webkit-trasition:all .3s ease-out;
+  -moz-trasition:all .3s ease-out;
+  -ms-trasition:all .3s ease-out;
+  -o-trasition:all .3s ease-out;
+}
+
+
+.input-back-job-lg{
+  position: relative;
+  background: #fcfcfc;
+  overflow: hidden;
+  trasition:all .3s ease-out;
+  -webkit-trasition:all .3s ease-out;
+  -moz-trasition:all .3s ease-out;
+  -ms-trasition:all .3s ease-out;
+  -o-trasition:all .3s ease-out;
+}
+.input-back-job-lg:after{
+  position: absolute;
+  content: "";
+  width: 12%;
+  height: 250%;
+  background: hsla(184, 19%, 70%,.2);
+  z-index: 1;
+  right: -7px;
+  top: 10px;
+  margin: -20px 0px 0px 5px;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform-origin: 0 0;
+  -moz-transform: rotate(-45deg);
+  -ms-transform-origin: 0 0;
+  -ms-transform: rotate(-45deg);
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+  transition:width .3s ease-in-out;
+  -webkit-transition:width .3s ease-in-out;
+  -moz-transition:width .3s ease-in-out;
+  -o-transition:width .3s ease-in-out;
+  -ms-transition:width .3s ease-in-out;
+}
+
+.progress-bar-success{
+  background-color: #1fa67a;
+  trasition:background-color .3s ease-out;
+  -webkit-trasition:background-color .3s ease-out;
+  -moz-trasition:background-color .3s ease-out;
+  -ms-trasition:background-color .3s ease-out;
+  -o-trasition:background-color .3s ease-out;
+}
+
+.btn{
+  border-radius: 0px;
+}
+
+.modal-content {
+  border-radius: 0px;
+}
+
+.icoslide{
+  margin-right: 10px;
+}

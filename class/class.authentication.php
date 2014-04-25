@@ -29,7 +29,7 @@
 					$_SESSION['iduser']=$encode;
 					//echo $encode."<br>";
 					//echo "".$result['iduser'];
-	 				return $result['iduser'];
+	 				return $result['userlevel'];
 				}
 				else
 				{	

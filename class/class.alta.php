@@ -8,11 +8,11 @@ class alta extends MySQL
 		$altas = parent::Add_bd("INSERT INTO ".$this->tabla." VALUES(".$this->campos.")");
 		if($altas==true)
 		{
-			return "1";
+			return true;
 		}
 		else
 		{
-			return "0";
+			return false;
 		}
 	}
 }

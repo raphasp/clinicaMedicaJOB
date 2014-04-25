@@ -419,7 +419,7 @@ hr.style-one {
 .btn-job{
   font-size: 1.3em;
   display: block;
-  margin: 5px auto;
+  margin: 0px auto;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -977,6 +977,10 @@ legend{
     text-align: left;
 }
 
+.table-style td:last-child{
+  cursor: pointer;
+}
+
 .table-style td.err {
     background-color: #e992b9;
     color: #fff;
@@ -1127,4 +1131,103 @@ legend{
 
 .icoslide{
   margin-right: 10px;
+  margin-left: 10px;
+}
+
+#engagementbody i{
+  transition=color .3s ease-out;
+  -webkit-transition=color .3s ease-out;
+  -moz-transition=color .3s ease-out;
+  -ms-transition=color .3s ease-out;
+  -o-transition=color .3s ease-out;
+}
+
+#engagementbody  tr:hover i{
+  color: #1fa67a;
+}
+
+#engagement{
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#engagementDescription{
+  /*display: none;*/
+}
+
+#Add-empleado{
+  display: inline-block;
+  width: 48%;
+  position: relative;
+  border-bottom:2px solid rgb(255,255,255);
+  cursor: pointer;
+  transition:all .5s ease-in-out;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -ms-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  overflow: hidden;
+}
+
+#Add-empleado:hover{
+  border-bottom:2px solid #31bc86;
+}
+
+#Update-empleado{
+  display: inline-block;
+  width: 48%;
+  position: relative;
+  border-bottom:2px solid rgb(255,255,255);
+  cursor: pointer;
+  transition:all .5s ease-in-out;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -ms-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  overflow: hidden;
+}
+
+#Update-empleado:hover{
+  border-bottom:2px solid #31bc86;
+}
+
+#divid{
+  display: none;
+}
+
+.input-job-sp{
+  border-radius: 0px;
+  overflow:hidden;
+  border:solid 1px #fcfcfc;
+  trasition:all .3s ease-out;
+  -webkit-trasition:all .3s ease-out;
+  -moz-trasition:all .3s ease-out;
+  -ms-trasition:all .3s ease-out;
+  -o-trasition:all .3s ease-out;
+}
+
+.input-job-sp:focus,
+.input-job-sp:hover,
+.input-job-sp:active{
+  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #edd8c8, 
+                 0 0 7px #edd8c8, 0 0 10px #edd8c8;
+  border:solid 1px rgb(93%, 78%, 77%);
+  color:#5f5f5f;
+}
+
+#divspeciality{
+  display: none;
+}
+
+#divlicense{
+  display: none;
+}
+
+.tabcol{
+  height: 63px;
+  max-height: 63px;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }

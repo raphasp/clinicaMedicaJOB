@@ -1,5 +1,5 @@
 <?php
-class update extends MySQL
+class updatas extends MySQL
 {
 	var $condicion="";
 	var $valores="";

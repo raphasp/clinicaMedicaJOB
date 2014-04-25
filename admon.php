@@ -62,9 +62,9 @@
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personal<b class="caret"></b></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="engagement.php">Contratación</a></li>
+	            <li><a href="admonengagement.php">Contratación</a></li>
 	            <li class="divider"></li>
-	            <li><a href="#">Actualización</a></li>
+	            <li><a href="admonengagement.php">Actualización</a></li>
 	          </ul>
 	        </li>
 	      </ul>

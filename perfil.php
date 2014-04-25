@@ -10,8 +10,8 @@
 		$athen=new athentication($name, $pass);
 		$result=$athen->Verify();
 		if ($result!=false) {
-			$typo=$res['type'];
-			if($typo==0){
+			$typo=$result;
+			if($typo=="A"){
 				header('Location:admon.php');
 			}
 			else if ($typo==1) {

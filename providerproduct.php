@@ -378,8 +378,8 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.numeric.js"></script>
     <script type="text/javascript" src="js/stockregister.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
-    <script src="js/jquery.stickyheader.js"></script>
+    <script type="text/javascript" src="js/jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="js/jquery.stickyheader.js"></script>
     <script type="text/javascript">
         $("#newamount").numeric();
     </script>

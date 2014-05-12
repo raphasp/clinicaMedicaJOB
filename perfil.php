@@ -1,6 +1,6 @@
 <?php
-	include("class/class.mysql.php");
-	include("class/class.authentication.php");	
+	require("class/class.mysql.php");
+	require("class/class.authentication.php");	
 	if (isset($_POST['username']) &&  
 		isset($_POST['password']) && 
 		!empty($_POST['password']) &&  
@@ -14,8 +14,8 @@
 			if($typo=="A"){
 				header('Location:admon.php');
 			}
-			else if ($typo==1) {
-				header('Location:doctor.php');
+			else if ($typo=="R") {
+				header('Location:reception.php');
 			} 
 			else if ($typo==2) {
 				header('Location:pharmacy.php');

@@ -13,7 +13,7 @@
 	$bus->condicion=$condition;
 	$bus->tabla='userlogin';
 	$search=$bus->seleccion();
-	if ($search['userlevel']!="A"){
+	if ($search['userlevel']!="R"){
 		header("Location:index.html");
 	}
 	else{
@@ -41,7 +41,7 @@
 <body>
 	<?php
 	$menu=new CreateMenu($search['iduser'],$search['name'],$search['lastpaternal'],$search['lastmaternal'],$search['email']);
-	$menu->createMenu();
+	$menu->createMenuReception();
 	?>
 	<div class="container" >
 		<div class='col-lg-12 img-style'>

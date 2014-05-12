@@ -546,7 +546,7 @@ function verifySecondForm(string){
 	 		}
 	 	}	
 	}
-	console.log(increment);
+	//console.log(increment);
  	if (increment==18) {
  		return increment;
  	}else{
@@ -575,11 +575,13 @@ function messageAskAdd(titletxt,messagetxt){
                 label: 'No',
                 action: function(dialog) {
                     dialog.close();
+                    return false;
                 }
             }, {
                 label: 'Si',
                 action: function(dialog) {
                     dialog.close();
+                    return true;
                 }
             }]
         });

@@ -7,10 +7,18 @@ class MySQL
   	if(!isset($this->conexion)|| empty($this->conexion))
 	{
 		//$this->conexion = (mysql_connect("localhost","uaematla_admin","Psico_2013_admon")) or die(mysql_error());
-  		$this->conexion = (mysql_connect("localhost","root","")) or die(mysql_error());
-  		//$this->conexion = (mysql_connect("192.168.1.2","admin","bBLaXKFsJU6RAFVF")) or die(mysql_error());
-  		mysql_select_db("mydb",$this->conexion) or die(mysql_error());
+  		 //or die(mysql_error());
+		try {
+			$this->conexion = (mysql_connect("localhost","root","")) or die(mysql_error());
+			mysql_select_db("job",$this->conexion) or die(mysql_error());
+		} catch (Exception $e) {
+			header("Location:index.html");
+		}
+   		//$this->conexion = (mysql_connect("192.168.1.2","admin","bBLaXKFsJU6RAFVF")) or die(mysql_error());
+  		
   		//mysql_select_db("uaematla_psico",$this->conexion) or die(mysql_error());
+  	}else{
+  		header("Location:index.html");
   	}
   }
  function Add_bd($alta)

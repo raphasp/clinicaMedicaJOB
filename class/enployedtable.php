@@ -27,10 +27,15 @@
 			}else{
 				$position="";
 			}
-			
+			$estats="";
+			if($engagementAux['statu']=="A"){
+				$estats="Activo";
+			}else{
+				$estats="Desactivo";
+			}
 			echo "<td>".$position."</td>";
 			echo "<td>".$engagementAux['mobile']."</td>";
-			echo "<td>".$engagementAux['statu']."</td>";
+			echo "<td>".$estats."</td>";
 			echo "<td><i class='glyphicon glyphicon-chevron-right'></i></td>";
 			echo "</tr>";
 		}
